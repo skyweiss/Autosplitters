@@ -19,12 +19,12 @@ update
 		vars.timer += old.timer;
 	}
 	
-	if (settings["Theme"] && current.theme != old.theme && vars.timer > 0)
+	if (settings["Theme"] && current.theme != old.theme)
 	{
 		vars.theme_change = 1;
 	}
 	
-	if (settings["Challenge"] && current.challenge != old.challenge && vars.timer > 0)
+	if (settings["Challenge"] && current.challenge != old.challenge)
 	{
 		vars.challenge_change = 1;
 	}
@@ -49,7 +49,7 @@ start
 
 split
 {
-	if (current.timer < old.timer)
+	if (current.timer < old.timer && vars.timer > 0)
 	{
 		if (vars.theme_change == 1)
 		{
