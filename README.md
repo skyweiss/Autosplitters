@@ -1,6 +1,6 @@
 # Autosplitters
 
-## Maddening Euphoria
+## [Maddening Euphoria](https://github.com/skyweiss/Autosplitters/blob/master/MaddeningEuphoria.asl)
 
 Autosplitting, Auto Start, and in-game time.
 
