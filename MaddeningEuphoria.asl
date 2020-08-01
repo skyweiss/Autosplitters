@@ -16,7 +16,7 @@ update
 {	
 	if (current.timer == 0)
 	{
-		vars.timer += old.timer;
+		vars.timer += Math.Floor(old.timer);
 	}
 	
 	if (settings["Theme"] && current.theme != old.theme)
@@ -66,7 +66,7 @@ split
 
 gameTime
 {
-	return TimeSpan.FromSeconds((vars.timer / 100) + (current.timer / 100));
+	return TimeSpan.FromSeconds((vars.timer / 100) + (Math.Floor(current.timer) / 100));
 }
 
 isLoading
